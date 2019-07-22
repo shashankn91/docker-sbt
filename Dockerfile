@@ -1,6 +1,6 @@
-FROM bigtruedata/scala:2.12.2
+FROM shashankn91/scala
 
-Run wget -O- "https://github.com/sbt/sbt/releases/download/v0.13.15/sbt-0.13.15.tgz" \
+Run  wget -O- "https://github.com/sbt/sbt/releases/download/v1.2.7/sbt-1.2.7.tgz" \
     |  tar xzf - -C /usr/local --strip-components=1 \
     && sbt exit
 
